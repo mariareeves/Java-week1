@@ -1,7 +1,7 @@
 import java.io.*;
 import java.lang.Thread;
 public class Mars {
-    public static void main(String[]args){
+    public static void main(String[]args) throws InterruptedException{
         String colonyName = "Reevesland";
         int  shipPopulation = 300;
         double meals = 4000.00;
@@ -30,6 +30,8 @@ public class Mars {
         }
 
         new GuessingGame();
+        new MarsExpedition();
+        new FindingsList();
     }
 
     public static boolean landingCheck(int minutesLeft) {
